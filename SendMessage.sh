@@ -41,7 +41,7 @@ SendMessage()
     mesg y
     read -p "put your Message here==>" message1
 
-    echo $myname : $message1 | write $UserNam
+    echo $(date) $myname : $message1 | write $UserNam
 
     if [ $? -eq 0 ]; then
         echo "sent"
